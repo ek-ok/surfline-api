@@ -40,7 +40,7 @@ def fetch_conditions(spot_ids, days):
     url = "http://services.surfline.com/kbyg/spots/forecasts/conditions?spotId={}&days={}"
 
     # Define retry logic
-    retries = Retry(total=3, status_forcelist=[500, 502, 503, 504])
+    retries = Retry(total=5, status_forcelist=[500, 502, 503, 504])
     s = Session()
     s.mount('http://', HTTPAdapter(max_retries=retries))
 
