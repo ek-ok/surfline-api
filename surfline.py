@@ -1,11 +1,20 @@
 import decimal
 import json
+import logging
 
 import grequests
 from requests import Session
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 from requests.utils import urlparse
+
+
+# Create logging
+root = logging.getLogger()
+if root.handlers:
+    for handler in root.handlers:
+        root.removeHandler(handler)
+logging.basicConfig(format='%(asctime)s %(message)s', level=logging.INFO)
 
 
 def roundup(n):
@@ -18,21 +27,6 @@ def parse_get_params(url):
     """Parses params from a GET URL"""
     params = dict(x.split('=') for x in urlparse(url).query.split('&'))
     return params['spotId']
-
-
-def parse_post_params(body):
-    """Parses params from POST body"""
-    params = {'spotId': []}
-    for item in urlparse(body).path.split('&'):
-        k, v = item.split('=')
-        # spotId
-        if k in params:
-            params[k].append(v)
-        # days
-        else:
-            params[k] = v
-
-    return params
 
 
 def fetch_conditions(spot_ids, days):
@@ -51,16 +45,14 @@ def fetch_conditions(spot_ids, days):
 
 
 def lambda_handler(event, context):
-    # POST request
-    if event['body']:
-        params = parse_post_params(event['body'])
-        spot_ids = params['spotId']
-        days = params['days']
+    """API endpoint"""
+    logging.info('surfline-API started')
 
-    # GET resuest
-    else:
-        spot_ids = event['multiValueQueryStringParameters']['spotId']
-        days = event['queryStringParameters']['days']
+    spot_ids = event['multiValueQueryStringParameters']['spotId']
+    days = event['queryStringParameters']['days']
+    logging.info('%s spotIds and %s days are passed', len(spot_ids), days)
 
     conditions = fetch_conditions(spot_ids, days)
+    logging.info('Fetched Surfline API')
+
     return {'statusCode': 200, 'body': json.dumps(conditions)}
