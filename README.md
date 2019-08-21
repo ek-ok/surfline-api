@@ -18,7 +18,7 @@ For example,
 
 
 Service                   | Example
------------------------------------------------------------------
+--------------------------|---------------------------------------
 Subregional Overview      |`http://services.surfline.com/kbyg/regions/overview?subregionId=58581a836630e24c4487900b`
 Subregional Forecasts     |`http://services.surfline.com/kbyg/regions/forecasts?subregionId=58581a836630e24c4487900b`
 
