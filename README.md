@@ -16,8 +16,10 @@ For example,
 
 ### Other Surfline's Know Before You Go services
 
-KBYG Subregional Overview:
+KBYG Subregional Overview
+
 `http://services.surfline.com/kbyg/regions/overview?subregionId=58581a836630e24c4487900b`
+
 
 KBYG Subregional Forecasts:
 `http://services.surfline.com/kbyg/regions/forecasts?subregionId=58581a836630e24c4487900b`
