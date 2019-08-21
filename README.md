@@ -12,17 +12,14 @@ You can pass multiple `spotId`s and `days`. `spotId` is Surfline's spot identifi
 
 For example,
 
-`https://y36qk3xd7h.execute-api.us-east-1.amazonaws.com/default/surfline-api?spotId=5842041f4e65fad6a7708a21&spotId=5842041f4e65fad6a7708a20&days=6`
+`https://something.execute-api.us-east-1.amazonaws.com/default/surfline-api?spotId=5842041f4e65fad6a7708a21&spotId=5842041f4e65fad6a7708a20&days=6`
 
 ### Other Surfline's Know Before You Go services
 
-KBYG Subregional Overview
-
-`http://services.surfline.com/kbyg/regions/overview?subregionId=58581a836630e24c4487900b`
-
-
-KBYG Subregional Forecasts:
-`http://services.surfline.com/kbyg/regions/forecasts?subregionId=58581a836630e24c4487900b`
+Service                   | Example
+-----------------------------------------------------------------
+Subregional Overview      |`http://services.surfline.com/kbyg/regions/overview?subregionId=58581a836630e24c4487900b`
+Subregional Forecasts     |`http://services.surfline.com/kbyg/regions/forecasts?subregionId=58581a836630e24c4487900b`
 
 KBYG Regional Analyses:
 `http://services.surfline.com/feed/regional?subregionId=58581a836630e24c4487900b`
