@@ -21,24 +21,10 @@ Service                   | Example
 --------------------------|---------------------------------------
 Subregional Overview      |`http://services.surfline.com/kbyg/regions/overview?subregionId=58581a836630e24c4487900b`
 Subregional Forecasts     |`http://services.surfline.com/kbyg/regions/forecasts?subregionId=58581a836630e24c4487900b`
-
-KBYG Regional Analyses:
-`http://services.surfline.com/feed/regional?subregionId=58581a836630e24c4487900b`
-
-KBYG Mapview Spots:
-`http://services.surfline.com/kbyg/mapview?south=33.667782574792184&west=-118.56994628906251&north=34.028762179464465&east=-118.04054260253908`
-
-KBYG Conditions:
-`http://services.surfline.com/kbyg/spots/forecasts/conditions?spotId=5842041f4e65fad6a7708906&days=6`
-
-KBYG Tides:
-`http://services.surfline.com/kbyg/spots/forecasts/tides?spotId=5842041f4e65fad6a7708906&days=1`
-
-KBYG Waves:
-`http://services.surfline.com/kbyg/spots/forecasts/wave?spotId=5842041f4e65fad6a7708906&days=1&intervalHours=1`
-
-KBYG Weather:
-`http://services.surfline.com/kbyg/spots/forecasts/weather?spotId=5842041f4e65fad6a7708906&days=1&intervalHours=1`
-
-KBYG Wind:
-`http://services.surfline.com/kbyg/spots/forecasts/wind?spotId=5842041f4e65fad6a7708906&days=1&intervalHours=1`
+Regional Analyses         |`http://services.surfline.com/feed/regional?subregionId=58581a836630e24c4487900b`
+Mapview Spots             |`http://services.surfline.com/kbyg/mapview?south=33.667782574792184&west=-118.56994628906251&north=34.028762179464465&east=-118.04054260253908`
+Conditions                |`http://services.surfline.com/kbyg/spots/forecasts/conditions?spotId=5842041f4e65fad6a7708906&days=6`
+Tides                     |`http://services.surfline.com/kbyg/spots/forecasts/tides?spotId=5842041f4e65fad6a7708906&days=1`
+Waves                     |`http://services.surfline.com/kbyg/spots/forecasts/wave?spotId=5842041f4e65fad6a7708906&days=1&intervalHours=1`
+Weather                   |`http://services.surfline.com/kbyg/spots/forecasts/weather?spotId=5842041f4e65fad6a7708906&days=1&intervalHours=1`
+Wind                      |`http://services.surfline.com/kbyg/spots/forecasts/wind?spotId=5842041f4e65fad6a7708906&days=1&intervalHours=1`
