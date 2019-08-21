@@ -1,6 +1,6 @@
 # Surfline API
 
-`Surfline API` returns wave forecasts for a given spots and number of days by concurrently fetcheing Surfline's **Know Before You Go** service. It is implemented on AWS Lambda. `function.zip` contains all the packages in `requirements.txt` for Python 3.7. It was built using EC2 `ami-035b3c7efe6d061d5` image for a compatibility reason.
+`Surfline API` returns wave forecasts for a given spots and number of days by concurrently fetcheing Surfline's *Know Before You Go* service. It is implemented on AWS Lambda. `function.zip` contains all the packages in `requirements.txt` for Python 3.7. It was built using EC2 `ami-035b3c7efe6d061d5` image for a compatibility reason.
 
 Add `surfline.py` to `function.zip` by running the below command and upload `function.zip` to Lambda.
 ```
