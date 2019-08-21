@@ -14,7 +14,7 @@ For example,
 
 `https://something.execute-api.us-east-1.amazonaws.com/default/surfline-api?spotId=5842041f4e65fad6a7708a21&spotId=5842041f4e65fad6a7708a20&days=6`
 
-### Other Surfline's Know Before You Go services
+## Other Surfline's Know Before You Go (kbyg) services
 
 
 Service                   | Example
